@@ -6,8 +6,12 @@ using static UnityEngine.Time;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 public class BirdScript : MonoBehaviour {
+	[Header("Gameplay Parameters")]
+
 	[Tooltip("Vertical velocity achieved when flapping.")]
 	public float flapVelocity = 1f;
+
+	[Header("Animation Parameters")]
 
 	[Tooltip("Start angle when flapping.")]
 	public float flapAngle = 45f;
